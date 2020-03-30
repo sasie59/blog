@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Title</h1>
+        <h1>標題</h1>
         <p>
-          this is CICD example
+          自動建置、部署
         </p>
         <a
           className="App-link"
