@@ -26,11 +26,9 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Run deploy
-        uses: JamesIves/github-pages-deploy-action@master
-        with:
-          keep_history: true
-        env:
-          ACCESS_TOKEN: ${{ secrets.commit_secret }}
-          BRANCH: gh-pages
-          FOLDER: build
-          BUILD_SCRIPT: npm run deploy
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.commit_secret }}
+        BRANCH: gh-pages
+        FOLDER: build
+        BUILD_SCRIPT: npm run deploy
