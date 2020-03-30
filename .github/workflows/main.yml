@@ -28,6 +28,4 @@ jobs:
     - name: Run deploy
       env:
         ACCESS_TOKEN: ${{ secrets.TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build
-        BUILD_SCRIPT: npm run deploy
+      run: npm run deploy
