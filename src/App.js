@@ -5,8 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Title</h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laborum facilis, quia reiciendis neque explicabo. Tempore esse quos, sint deserunt, adipisci earum iste obcaecati odit provident numquam vero officia voluptas!
+          this is CICD example
         </p>
         <a
           className="App-link"
