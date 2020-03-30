@@ -6,7 +6,8 @@ name: build and deploy
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -29,7 +30,7 @@ jobs:
       - name: Run deploy
         uses: sasie59/blog@master
         env:
-          ACCESS_TOKEN: ${{ secrets.commit_secret }}
+          ACCESS_TOKEN: ${{ secrets.TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
           BUILD_SCRIPT: npm run deploy
